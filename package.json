@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --files index.ts",
     "build": "tsc -p .",
-    "test:watch": "cross-env NODE_ENV=test mocha --recursive --watch",
+    "test:watch": "mocha --recursive --watch",
     "test": "nyc mocha --exit -r ts-node/register ./test/*.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix ",
