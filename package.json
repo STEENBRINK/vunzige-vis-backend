@@ -2,9 +2,9 @@
   "name": "funzigevis",
   "version": "0.0.1",
   "description": "Dating Website",
-  "main": "src/index.ts",
+  "main": "index.ts",
   "scripts": {
-    "start": "nodemon --files src/index.ts",
+    "start": "nodemon --files index.ts",
     "build": "tsc -p .",
     "test:watch": "cross-env NODE_ENV=test mocha --recursive --watch",
     "test": "nyc mocha --exit -r ts-node/register ./test/*.ts",
@@ -20,6 +20,7 @@
   "author": "STEENBRINK, Sampie777, Godefriedus",
   "homepage": "https://github.com/STEENBRINK/funzige-vis-backend#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.4.3",
     "npm-check-updates": "^16.11.1",
