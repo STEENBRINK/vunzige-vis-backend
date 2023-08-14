@@ -36,19 +36,12 @@
         ]
      },
      "overrides": [
-        {   
-            "files": ["*.ts"],
-            "rules": {
-                "semi": "off",
-                "@typescript-eslint/semi": ["error", "always"],
-                "validateLineBreaks": "LF"
-            }
-        },
         {
             "files": ["test/**/*.ts"],
             "rules": {
                 "no-unused-expressions": "off",
-                "import/no-extraneous-dependencies": "off"
+                "import/no-extraneous-dependencies": "off",
+                "validateLineBreaks": "LF"
             }
         }
       ]

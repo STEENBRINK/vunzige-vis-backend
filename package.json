@@ -2,16 +2,15 @@
   "name": "funzigevis",
   "version": "0.0.1",
   "description": "Dating Website",
-  "main": "src/index.ts",
+  "main": "index.ts",
   "scripts": {
-    "start": "nodemon --files src/index.ts",
+    "start": "nodemon --files index.ts",
     "build": "tsc -p .",
-    "test:watch": "cross-env NODE_ENV=test mocha --recursive --watch",
+    "test:watch": "mocha --recursive --watch",
     "test": "nyc mocha --exit -r ts-node/register ./test/*.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix ",
-    "format": "prettier --write \"**/*.ts\"",
-    "prepare": "husky install"
+    "format": "prettier --write \"**/*.ts\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   "author": "STEENBRINK, Sampie777, Godefriedus",
   "homepage": "https://github.com/STEENBRINK/funzige-vis-backend#readme",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^7.4.3",
     "npm-check-updates": "^16.11.1",
@@ -44,7 +44,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.4.0",
     "eslint-plugin-import": "^2.26.0",
-    "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
     "mocha": "^9.2.1",
     "nodemon": "^3.0.1",
